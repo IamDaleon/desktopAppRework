@@ -1,0 +1,13 @@
+{
+  "name": "bluSkies",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "iamDaleon",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.0.1"
+  },
+    "scripts": {
+      "start": "electron ."
+    }
+}
