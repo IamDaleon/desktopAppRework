@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
     <title>OnixMedia | CORE</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using 
-    <br />
-    <h3><strong> Node.js</h3> [ </strong><span id="node-version"></span> ] ,
-    <br />
-    Chromium <span id="chrome-version"></span>,
-    <br />
-    Electron <span id="electron-version"></span>.
+    <nav>
+        <ul>
+            <a href="src/collections.html"><li>Sites</li></ul></a>
+            <a href="src/chat.html"><li>Chat</li></a>
+            <a href="src/resources.html"><li>Resources</li></a>
+            <a href="src/learning.html"><li>Learning</li></a>
+        </ul>
+    </nav>
+    <h1>Hello from Electron renderer!</h1>
+    <p>👋</p>
+    <p id="info"></p>
   </body>
+  <script src="renderer.js"></script>
+<!-- 
+    https://www.pluralsight.com/guides/how-to-use-gitignore-file
+    https://github.com/git-guides/
+    https://github.com/github/gitignore/blob/main/Node.gitignore -->
 </html>
