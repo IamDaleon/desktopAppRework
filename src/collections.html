@@ -5,26 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnixMedia | Collections</title>
-<<<<<<< HEAD
-</head>
-<body>
-    <nav>
-        <ul>
-            <a href="collections.html"><li>Sites</li></ul></a>
-            <a href="chat.html"><li>Chat</li></a>
-            <a href="resources.html"><li>Resources</li></a>
-            <a href="learning.html"><li>Learning</li></a>
-        </ul>
-    </nav>
-    <div>
-        <h1>
-            WOW! it worked....!!!
-        </h1>
-    </div>
-</body>
-=======
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="../assets/styles/lander.css" />
+    <link rel="stylesheet" href="../assets/styles/cards.css" />
+    <!-- <link rel="stylesheet" href="../assets/styles/modal.css" /> -->
+    <link rel="stylesheet" href="../assets/styles/filter.css" />
+    <script src="../searchcards.js" defer></script>
+</head>
   <body>
     <div class=" p-3">
       <div class="row">
@@ -58,10 +45,43 @@
         <div class="col-12 col-sm-10">
           <div class="row">
             <div class="col-md-12">
-              <h1>Sites</h1>
-              <div>
-                ds
-            </div>
+                <div class="containersearch">
+                  <div class="componentsmd">
+                      <input id="search" type="text" class="search__input" placeholder="Search by Sitename..." data-search></input>
+                  </div>
+                </div>
+                <div class="componentslg">
+                
+                <main class="containeritems page-content" data-site-cards-container></main>
+                <template data-site-template>
+                  <div class="card">
+                    <div class="content">
+                      <div class="title" data-title></div>
+                      <div class="tag1" data-tag1></div>
+                      <div class="tag2" data-tag2></div>
+                      <div class="tag3" data-tag3></div>
+                      <div class="tag4" data-tag4></div>
+                      <div class="tag5" data-tag5></div>
+                      <div class="row">
+                        <div class="col">
+                          <a href="" id="page"></a>
+                            <button class="btn btn-success">
+                             Page
+                            </button>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="http://">
+                            <button class="btn btn-primary">
+                              Login
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                </template>
+                </div>
           </div>
         </div>
       </div>
@@ -72,5 +92,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
->>>>>>> master
 </html>
