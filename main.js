@@ -10,9 +10,6 @@ const createWindow = () => {
           preload: path.join(__dirname, 'preload.js')
         }
     })
-    // win.loadURL('https://github.com')
-  
-    // win.loadFile('collections.html')
     win.loadFile('index.html')
   }
 

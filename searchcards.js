@@ -17,7 +17,6 @@ searchInput.addEventListener("input", e => {
 
 fetch("../general.json")
   .then(res => res.json())
-  
   .then(data => {
     sites = data.map(site => {
       const card = siteCardTemplate.content.cloneNode(true).children[0]
@@ -34,30 +33,8 @@ fetch("../general.json")
       tag3.textContent = `PHP Version: ${site.phpv}`
       tag4.textContent = `Wordpress Version: ${site.wpv}`
       tag5.textContent = `Access: ${site.access}`
-      // tag6.textContent = `<a href="http://${site.url}"`
+      // tag6.textContent = site.url
       siteCardContainer.append(card)
-      
-      
-      return { sitename: site.sitename, sitehosted: site.hosted, siterenewal: site.renewal, sitewpv: site.wpv, sitephp: site.phpv, siteaccess: site.url}
+      return { sitename: site.sitename, sitehosted: site.hosted, siterenewal: site.renewal, sitewpv: site.wpv, sitephp: site.phpv, siteaccess: site.url, element: card }
     })
-
-    // document.getElementById('page').innerHTML = `http://${data[0].url}`;  
-    // console.log(`http://${data[0].url}`);
-
-    let aReplacement = document.getElementById('page');
-    let urlR = `${data[0].url}`;
-    if (document.readyState != "complete") {
-      document.addEventListener('DOMContentLoaded', function() {
-        prepareTags()
-      }, false);
-    } else {
-      prepareTags();
-    }
-
-    function prepareTags(){
-      if (aReplacement) {
-        aReplacement.setAttribute(`onclick`,`require('shell').openExternal("http://${urlR}"`)
-      }
-      return false;
-    }
   })
