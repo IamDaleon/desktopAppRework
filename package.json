@@ -17,6 +17,7 @@
     "bootstrap-electron": "^1.4.0",
     "bootstrap-scss": "^5.2.3",
     "drivelist": "^11.1.0",
+    "gsap": "^3.12.1",
     "input": "^1.0.1",
     "jquery": "^3.7.0",
     "telegram": "^2.17.4"

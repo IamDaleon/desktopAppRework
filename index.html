@@ -9,16 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <div class=" p-3">
+    <div class="p-3">
       <div class="row">
-        <div class="col-1">
-          <div class="text-center">
+        <div class="col-1 navSec">
+          <div class="position-fixed text-center">
             <img src="./assets/imgs/omlogo.jpg" alt="Onix Media Logo" class="rounded" width="100" height="100">
             <!-- <input type="checkbox" id="switch" /><label for="switch">Toggle</label> -->
             <br />
           </div>
           <br />
-          <div class="text-center">
+          <div class="rules position-fixed text-center">
+              <div class="navBtn">
+                <a href="https://auth.monday.com/auth/login_monday/" alt="chat">
+                  <i class="fa-regular fa-comments fa-xl" alt="chat">
+                    <span class="othIco">
+                      Monday 
+                    </span></i>
+                  </i>
+                </a>
+              </div>
               <div class="navBtn">
                 <a href="https://web.telegram.org/a" alt="chat">
                   <i class="fa-regular fa-comments fa-xl" alt="chat">
@@ -33,6 +42,15 @@
                   <i class="fa-solid fa-link fa-xl">
                     <span class="othIco">
                       Sites
+                    </span></i>
+                  </i>
+                </a>
+              </div>
+              <div class="navBtn">
+                <a href="src/report.html" alt="library">
+                  <i class="fa-solid fa-table-list fa-xl">
+                    <span class="othIco">
+                      Reports
                     </span></i>
                   </i>
                 </a>
@@ -65,69 +83,65 @@
         </div>
         <div class="col-12 col-sm-10">
           <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="jumbotron text-center">
-                    <h1 class="display-2">Hello, world!</h1>
-                    <hr class="my-2">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <p class="lead">
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="jumbotron text-center">
-                  <h1 class="display-2">Hello, world!</h1>
-                  <hr class="my-2">
-                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                  <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                  </p>
-                </div>
-              </div>
-                <div class="col-md-4">
-                  <div class="jumbotron text-center">
-                    <h1 class="display-2">Hello, world!</h1>
-                    <hr class="my-2">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <p class="lead">
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <!-- https://docs.zenquotes.io/zenquotes-documentation/#api-structure -->
-                <div>
-                  <div class="jumbotron jumbotron-fluid text-center bg-light p-5 mb-3">
-                    <div class="container">
-                      <h4 id="quote" class="display-6">Quote of the Day</h4>
-                      <p id="author" class="lead"></p>
+            <iframe src="https://marketing828.monday.com/" frameborder="1"></iframe>
+            <div class="col-md-12 contSec">
+              <main class="flex__col">
+                <section class=" intro flex">
+                  <div class="col-4"></div>
+                  <img src="https://images.unsplash.com/photo-1685903112462-e51c7d3c4aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+                  <div>
+                    <!-- https://docs.zenquotes.io/zenquotes-documentation/#api-structure -->
+                    <div>
+                      <div class="jumbotron jumbotron-fluid text-center bg-light p-5 mb-3">
+                        <div class="container">
+                          <h4 id="quote" class="text-center display-6">Quote of the Day</h4><br />
+                          <p id="author" class="lead"></p>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </section>
+                <section class="list flex__col">
+                  <div class="list__item flex">
+                    <img src="./assets/imgs/Beeman2.jpg">
+                      <div class="list__item__title">ONIX <span class="golden">MEDIA</span></div>
+                      <div class="list__item__titleOutline">ONIX MEDIA</div>
+                      <ul class="list__item__infos flex">
+                      <li><span>GRAPHIC</span><br /> Alexis H. | Jaclyn C. | Jeremiah F.</li>
+                      <li><span>DESIGN</span><br /> Karla V.</li>
+                      <li><span>WEB</span><br />Fabian A. | Daleon L.</li>
+                      <li><span>CONTENT</span><br /> Tamara M.</li>
+                    </ul>
+                    <!-- <div class="list__item__type">CONTENT</div>
+                    <div class="list__item__project">MANAGEMENT</div> -->
+                  </div>
+                  <div class="list__item flex">
+                    <img src="https://images.unsplash.com/photo-1685725083464-26cab8f2da1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+                    <a href="./src/collections.html">
+                    <div class="list__item__title_sub">Library</div>
+                    <div class="list__item__titleOutline_sub">Library</div>
+                    </a>
+                  </div>
+                  <div class="list__item flex">
+                    <img src="https://images.unsplash.com/photo-1680978560866-481aff9fd6f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+                    <a href="./src/resources.html">
+                      <div class="list__item__title_sub">Resource</div>
+                      <div class="list__item__titleOutline_sub">Resource</div>
+                    </a>
+                    <ul class="list__item__infos_singular ">
+
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="list__item flex">
+                    <img src="https://images.unsplash.com/photo-1680978560866-481aff9fd6f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+                    <a href="./src/learning.html">
+                      <div class="list__item__title_sub">Learn</div>
+                      <div class="list__item__titleOutline_sub">Learn</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-              <div class="col">
-                <div>
-                Graphic Design Team news
-                <!-- Pull from Monday API -->
-              </div></div>
-              <div class="col">
-                <div>
-                  Web Design Team news
-                <!-- Pull from Monday API -->
-              </div>
-              </div>
-              <div class="col">
-                <div>
-                  Legal Team news
-                  <!-- Pull from Monday API -->
-                </div>
-              </div>
-              </div>
+              </main>
             </div>
           </div>
         </div>
@@ -137,6 +151,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="mainWorkUp.js"></script>
   </body>
 <!-- 
     https://www.pluralsight.com/guides/how-to-use-gitignore-file

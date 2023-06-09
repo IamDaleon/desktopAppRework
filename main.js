@@ -61,7 +61,7 @@ const themeScript = require('./theme.js');
 const CCScript = require('./centerchat.js');
 const SBScript = require('./sidebar.js');
 
-let wtitle = 'Selegram';
+let wtitle = 'ONIX MEDIA';
 let wicon = 'res/icon.png';
 let gh = 'res/gh.png';
 let realclose = false;
@@ -75,23 +75,23 @@ label: 'File',
 submenu: 
 [
 	{
-	label: 'Switch to Telegram K',
+	label: 'ONIX MEDIA | CORE',
 	accelerator: 'CmdOrCtrl+Alt+Shift+K',
 	click: () => {
-		console.log("Switching to Telegram K...");
-		mainWindow.setTitle("Switching to Telegram K...");
+		console.log("Switching to ONIX MEDIA | CORE...");
+		mainWindow.setTitle("ONIX MEDIA | CORE");
 		mainWindow.loadFile('./index.html'); 
 		cfgval.tgc = 1;
 		saveTGC(); 
 	}
 	},
 	{
-	label: 'Switch to Telegram A',
+	label: 'Telegram',
 	accelerator: 'CmdOrCtrl+Alt+Shift+A',
 	click: () => 
 	{
-		console.log("Switching to Telegram A...");
-		mainWindow.setTitle("Switching to Telegram A...");
+		console.log("Switching to Telegram...");
+		mainWindow.setTitle("Switching to Telegram...");
 		mainWindow.loadURL('https://web.telegram.org/a'); 
 		cfgval.tgc = 0;
 		saveTGC(); 
@@ -460,12 +460,12 @@ function createWindow()
 if (cfgval.tgc === 1) 
 {
 	mainWindow.loadFile('./index.html');
-	console.log("Client: K");
+	console.log("ONIX MEDIA | CORE");
 } 
 else if (cfgval.tgc === 0) 
 {
 	mainWindow.loadURL('https://web.telegram.org/a');
-	console.log("Client: A");
+	console.log("Telegram");
 }
 
 	mainWindow.on('closed', () => 
@@ -476,9 +476,9 @@ else if (cfgval.tgc === 0)
 mainWindow.webContents.on('did-finish-load', () => 
 {
 	if (cfgval.tgc === 0)
-	mainWindow.setTitle( wtitle + ": Using Telegram A");
+	mainWindow.setTitle( wtitle + " | Telegram");
 	else
-	mainWindow.setTitle( wtitle + ": Using Telegram K");
+	mainWindow.setTitle( wtitle + " | CORE");
 });
 
 
@@ -559,7 +559,15 @@ appTray = new Tray(trayIconPath);
 const contextMenu = Menu.buildFromTemplate
 ([
 {
-	label: 'Quit Selegram',
+	label: 'Show Onix Media | CORE',
+	click: () => 
+	{
+		// realclose = 1;
+		mainWindow.show();
+	}
+},
+{
+	label: 'Quit Onix Media | CORE',
 	click: () => 
 	{
 		realclose = 1;
