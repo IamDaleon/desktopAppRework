@@ -8,11 +8,20 @@ fetch("https://type.fit/api/quotes")
         max = Math.floor(data.length);
         randoselection = Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
 
-        document.getElementById("quote").innerHTML = data[randoselection].text
+        let quote = data[randoselection].text;
+        let author = data[randoselection].author;
         
-        if(document.getElementById("author").innerHTML = data[randoselection].author = "null"){
-            document.getElementById("author").innerHTML =  "Unknown";
-        }
-    }
-    getRandomIntInclusive()
+        document.getElementById("quote").innerHTML = quote
+        // document.getElementById("author").innerHTML = author
+
+        console.log(quote);
+        console.log(author);
+
+        if(author === null){
+          document.getElementById("author").innerHTML =  " ";
+      }else{
+          document.getElementById("author").innerHTML = author;
+      }
+  }
+  getRandomIntInclusive()
 });

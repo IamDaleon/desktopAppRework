@@ -1,70 +1,21 @@
-// const { app, BrowserWindow, ipcMain } = require('electron');
-// const url = require('url')
-// const path = require('path')
-
-// const createWindow = () => {
-//     const win = new BrowserWindow({
-//       width: 1200,
-//       height: 800,
-//       webPreferences: {
-//           preload: path.join(__dirname, 'preload.js')
-//         }
-//     })
-//     win.loadFile('index.html')
-//   }
-
-// app.whenReady().then(() => {
-//     ipcMain.handle('ping', () => 'pong')
-//     createWindow()
-
-
-// app.on('activate', () => {
-//   if (BrowserWindow.getAllWindows().length === 0) {
-//     createWindow()
-//     }
-//   })
-// })
-
-// app.on('window-all-closed', () => {
-//     if (process.platform !== 'darwin') {
-//         app.quit()
-// }
-// })
-
-/*
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
-
-const { app, BrowserWindow, Tray, Menu, shell  } = require('electron');
+const { app, shell, BrowserWindow, Tray, Menu } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const userDataPath = app.getPath('userData');
 const windowSizeFilePath = path.join(userDataPath, 'window-size.json');
 const tgcFilePath = path.join(userDataPath, 'cfg.json');
+
 let mainWindow;
 let appTray;
-const themeScript = require('./theme.js');
-
-
-const CCScript = require('./centerchat.js');
-const SBScript = require('./sidebar.js');
-
 let wtitle = 'ONIX MEDIA';
 let wicon = 'res/icon.png';
 let gh = 'res/gh.png';
 let realclose = false;
+
+const themeScript = require('./theme.js');
+const CCScript = require('./centerchat.js');
+const SBScript = require('./sidebar.js');
+
 
 const cfgval = loadTGC() || { tgc : 0 , swl : 0, dcc : 0, smb : 1 };
 	console.log( cfgval );
