@@ -37,6 +37,18 @@ submenu:
 	}
 	},
 	{
+	label: 'PhotoPrism',
+	accelerator: 'CmdOrCtrl+Alt+Shift+A',
+	click: () => 
+	{
+		console.log("Switching to PhotoPrism...");
+		mainWindow.setTitle("Switching to PhotoPrism...");
+		mainWindow.loadURL('http://photoprism.me:2342'); 
+		// cfgval.tgc = 2;
+		// saveTGC(); 
+	}
+	},
+	{
 	label: 'Telegram',
 	accelerator: 'CmdOrCtrl+Alt+Shift+A',
 	click: () => 
