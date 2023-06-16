@@ -2,11 +2,15 @@
   {
     "id": 1,
     "sitename": "PartyNuts",
+    "catergory":[
+      "E-Commerce",
+      "Retail"
+    ],
     "username": "Bret",
-    "hosted": "--",
-    "renewal": "--",
-    "phpv": "--",
-    "wpv":  "--",
+    "hosted by": "--",
+    "SSLRenewal": "--",
+    "PHP-v": "--",
+    "WordpressVersion":  "--",
     "access": "NO",
     "url":"PartyNuts.com"
   },
