@@ -407,8 +407,9 @@ function createWindow()
 	const windowSize = loadWindowSize() || { width: 666, height: 696 };
 	mainWindow = new BrowserWindow
 	({
-	width: windowSize.width,
-	height: windowSize.height,
+	width: 1440,
+	height: 920,
+	resizable: false,
 		icon: path.join(__dirname, wicon),
 		webPreferences:
 		{
